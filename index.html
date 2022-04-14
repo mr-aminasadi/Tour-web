@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>توروپیا</title>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom style link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body dir="rtl">
+    <!-- header section start -->
+    <header>
+      <!-- ====menubar==== -->
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <!-- ====logo==== -->
+      <a href="#" class="logo"><span>تور</span>پیا</a>
+
+      <!-- ====menu==== -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">خانه</a></li>
+          <li><a href="#book">کتابچه</a></li>
+          <li><a href="#packages">محصولات</a></li>
+          <li><a href="#services">خدمات</a></li>
+          <li><a href="#gallery">گالری</a></li>
+          <li><a href="#review">بازدید</a></li>
+          <li><a href="#contact">ارتباط با ما</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="جستجو کنید..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+    <!-- header section end -->
+    <!-- login form container start -->
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form>
+        <h4>خوش آمدید!</h4>
+        <input type="email" class="box" placeholder="ایمیل خود را وارد کنید" />
+        <input type="password" class="box" placeholder="رمز عبور" />
+        <input type="submit" value="ورود" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">من را به خاطر بسپار</label>
+        <p>رمز عبور خود را فراموش کردید؟ <a href="">اینجا کلیک کنید</a></p>
+        <p>اکانت ندارید؟ <a href="">همین حالا عضو بشید</a></p>
+      </form>
+    </div>
+    <!-- login form container end -->
+
+    <!-- home section start -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>ماجرا جویی ارزشش را دارد</h3>
+        <p>مکان های جدید را با ما کشف کنید ، ماجرا جویی در اتنظار شماست</p>
+        <a href="" class="btn">بیشتر کشف کنید</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn active" data-src="assets/images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="assets/images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="assets/images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="assets/images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="assets/images/vid-5.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="assets/images/vid-1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- scripts -->
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
